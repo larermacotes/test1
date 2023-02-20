@@ -18,7 +18,8 @@ while True:
     if event == sg.WIN_CLOSED or event == 'Lukk':
         break
     elif event == "-INPUT-" + "_Enter":
-        print(values["-INPUT-"]) 
-        window["-OUTPUT-"].update(values["-INPUT-"])
+        tekst = values["-INPUT-"]
+        print(tekst) 
+        window["-OUTPUT-"].update(tekst)
 # Lukk vinduet
 window.close()
